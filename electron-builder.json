@@ -1,0 +1,21 @@
+{
+  "asar": true,
+  "appId": "com.tobythomassen.ptz-control",
+  "productName": "PTZ Control",
+  "directories": {
+    "output": "release",
+    "buildResources": "public"
+  },
+  "files": ["dist"],
+  "win": {
+    "artifactName": "windows.exe"
+  },
+  "portable": {
+    "artifactName": "windows-portable.exe"
+  },
+  "asarUnpack": [
+    "node_modules/ffmpeg-static/bin/${os}/${arch}/ffmpeg",
+    "node_modules/ffmpeg-static/index.js",
+    "node_modules/ffmpeg-static/package.json"
+  ]
+}

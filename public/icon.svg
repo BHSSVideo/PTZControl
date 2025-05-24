@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	 viewBox="0 0 124 124">
+<style type="text/css">
+	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(250, 82, 82);}
+	.st1{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(190, 75, 219);}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(76, 110, 245);}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(21, 170, 191);}
+	.st4{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(64, 192, 87);}
+	.st5{fill-rule:evenodd;clip-rule:evenodd;fill:rgb(250, 176, 5);}
+</style>
+<path class="st0" d="M61.7,0.3c14.8,0,28.3,5.2,38.9,13.9L46.9,45.2V2.1C51.6,0.9,56.6,0.3,61.7,0.3L61.7,0.3z"/>
+<path class="st1" d="M106,19.1c10.6,11.1,17.2,26.1,17.2,42.6c0,3-0.2,6-0.6,8.9L69.7,40.1L106,19.1L106,19.1z"/>
+<path class="st2" d="M121.1,77.8c-4.9,18.2-17.9,33-34.9,40.4V57.6L121.1,77.8L121.1,77.8z"/>
+<path class="st3" d="M79.2,120.6c-5.5,1.6-11.4,2.5-17.5,2.5c-13.8,0-26.4-4.5-36.7-12.1l54.2-31.3L79.2,120.6L79.2,120.6z"/>
+<path class="st4" d="M19.4,106.3C7.6,95.1,0.3,79.3,0.3,61.7c0-3,0.2-6,0.6-8.9l54.5,32.7L19.4,106.3L19.4,106.3z"/>
+<path class="st5" d="M2.4,45.6c5.2-19,19.2-34.4,37.5-41.3l-0.4,63.5L2.4,45.6L2.4,45.6z"/>
+</svg>

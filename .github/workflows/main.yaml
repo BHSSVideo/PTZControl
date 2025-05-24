@@ -1,0 +1,19 @@
+name: Build and release binaries
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  Build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - run: npm install
+      - run: npm run build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: windows.exe
+          path: release/windows.exe

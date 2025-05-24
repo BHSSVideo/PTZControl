@@ -1,0 +1,40 @@
+{
+  "name": "ptz-control",
+  "version": "1.0.0",
+  "description": "A simple but powerful all-in-one controller for IP PTZ cameras using VISCA and FFMPEG.",
+  "author": "Toby Thomassen",
+  "license": "AGPL-3.0-only",
+  "homepage": "ptzcontrol.com",
+  "main": "dist/electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder -p never"
+  },
+  "dependencies": {
+    "@trpc/client": "^10.0.0-proxy-beta.15",
+    "@trpc/server": "^10.0.0-proxy-beta.15",
+    "ffmpeg-static": "^5.0.2",
+    "ws": "^8.9.0",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@mantine/core": "^5.5.5",
+    "@mantine/hooks": "^5.5.5",
+    "@mantine/modals": "^5.5.5",
+    "@mantine/notifications": "^5.5.5",
+    "@mantine/rte": "^5.5.5",
+    "@types/react": "^17.0.47",
+    "@types/react-dom": "^17.0.17",
+    "@types/ws": "^8.5.3",
+    "@vitejs/plugin-react": "^2.0.1",
+    "electron": "^20.0.3",
+    "electron-builder": "^23.1.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-query": "^3.39.2",
+    "tabler-icons-react": "^1.55.0",
+    "typescript": "^4.8.4",
+    "vite": "^3.0.8",
+    "vite-plugin-electron": "^0.9.0"
+  }
+}

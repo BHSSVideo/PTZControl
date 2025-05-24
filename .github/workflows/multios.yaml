@@ -12,22 +12,34 @@ jobs:
     strategy:
       matrix:
         os: [windows-latest, macos-latest, ubuntu-latest]
+
     steps:
       - uses: actions/checkout@v3
-      
+
       - uses: actions/setup-node@v3
         with:
           node-version: 'lts/*'
 
       - run: npm install
       - run: npm run build
-      
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
+
+      - name: Upload Windows artifact
+        if: runner.os == 'Windows'
+        uses: actions/upload-artifact@v3
         with:
-          name: ${{ runner.os }}-build
-          path: |
-            release/windows.exe
-            release/macos
-            release/linux
-          if-no-files-found: ignore
+          name: windows-binary
+          path: release/windows.exe
+
+      - name: Upload macOS artifact
+        if: runner.os == 'macOS'
+        uses: actions/upload-artifact@v3
+        with:
+          name: macos-binary
+          path: release/macos
+
+      - name: Upload Linux artifact
+        if: runner.os == 'Linux'
+        uses: actions/upload-artifact@v3
+        with:
+          name: linux-binary
+          path: release/linux
